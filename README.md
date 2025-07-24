@@ -117,7 +117,7 @@ Copy `.env.example` to `.env` and configure:
 
 ## 🌐 Production Deployment
 
-### Option 1: Node.js Production Server
+### Native Node.js Production Server
 
 1. **Prepare Production Environment**
 
@@ -137,7 +137,7 @@ Copy `.env.example` to `.env` and configure:
    npm start
    ```
 
-### Option 2: Docker Deployment
+### Containers
 
 1. **Create Dockerfile**
 
@@ -150,8 +150,6 @@ Copy `.env.example` to `.env` and configure:
    # Run container
    docker run -p 3000:3000 -e NODE_ENV=production user-management-api
    ```
-
-### Option 3: Cloud Platform Deployment
 
 ---
 
