@@ -12,6 +12,8 @@ A lightweight Node.js Express-based REST API for managing users (Create, Read, U
 - 🚀 Minimal setup, ready for DevOps CI/CD pipelines  
 - 🧰 Easily extendable to use persistent databases (e.g., MongoDB, PostgreSQL)
 
+![screenshot](assets/screenshot1.png)
+
 ---
 
 ## Getting Started
