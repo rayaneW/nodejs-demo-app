@@ -72,13 +72,9 @@ Copy `.env.example` to `.env` and configure:
 ### Local Development Setup
 
 1. **Clone and Install**
-   ```bash
-   git clone <repository-url>
-   cd nodejs-demo-app
-   npm install
-   ```
 
 2. **Environment Configuration**
+
    ```bash
    # Create environment file
    cp .env.example .env
@@ -89,6 +85,7 @@ Copy `.env.example` to `.env` and configure:
    ```
 
 3. **Start Development Server**
+
    ```bash
    # Start with auto-reload (recommended for development)
    npm run dev
@@ -98,6 +95,7 @@ Copy `.env.example` to `.env` and configure:
    ```
 
 4. **Run Tests During Development**
+
    ```bash
    # Run all tests with coverage
    npm test
@@ -122,6 +120,7 @@ Copy `.env.example` to `.env` and configure:
 ### Option 1: Node.js Production Server
 
 1. **Prepare Production Environment**
+
    ```bash
    # Set production environment variables
    export NODE_ENV=production
@@ -132,15 +131,10 @@ Copy `.env.example` to `.env` and configure:
    ```
 
 2. **Start Production Server**
+
    ```bash
    # Direct start
    npm start
-   
-   # Or with PM2 for process management
-   npm install -g pm2
-   pm2 start src/server.js --name "user-api"
-   pm2 save
-   pm2 startup
    ```
 
 ### Option 2: Docker Deployment
@@ -148,6 +142,7 @@ Copy `.env.example` to `.env` and configure:
 1. **Create Dockerfile**
 
 2. **Build and Run**
+
    ```bash
    # Build Docker image
    docker build -t user-management-api .
