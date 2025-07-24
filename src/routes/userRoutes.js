@@ -1,5 +1,5 @@
 const express = require('express');
-const { validateUser } = require('../middleware/validation');
+const { validateUser, validateUserUpdate } = require('../middleware/validation');
 const {
   createUser,
   getUsers,
@@ -140,7 +140,7 @@ router.post('/', validateUser, createUser);
  *       400:
  *         description: Bad request
  */
-router.put('/:id', validateUser, updateUser);
+router.put('/:id', validateUserUpdate, updateUser);
 
 /**
  * @swagger
