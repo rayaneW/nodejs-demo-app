@@ -167,9 +167,7 @@ Copy `.env.example` to `.env` and configure:
 
 ### Production Optimizations
 
-- **In-Memory Storage**: Consider migrating to persistent database (MongoDB, PostgreSQL)
 - **Caching**: Add Redis for session management and caching
-- **Security**: Implement rate limiting, helmet.js, and input sanitization
 - **Monitoring**: Add logging (Winston) and monitoring (New Relic, DataDog)
 
 ---
