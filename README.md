@@ -1,16 +1,16 @@
-# 🧩 Node.js User Management API
+# Node.js User Management API
 
 A lightweight Node.js Express-based REST API for managing users (Create, Read, Update, Delete) with in-memory data storage. Includes auto-seeded user data and interactive Swagger (OpenAPI) documentation served at the root (`/`).
 
 ---
 
-## 📦 Features
+## Features
 
-- ✅ In-memory storage for rapid development and testing  
-- 🔄 Full CRUD endpoints: `POST`, `GET`, `PUT`, `DELETE`  
-- 🧪 Swagger UI for testing & docs at `/` 
-- 🚀 Minimal setup, ready for DevOps CI/CD pipelines  
-- 🧰 Easily extendable to use persistent databases (e.g., MongoDB, PostgreSQL)
+- In-memory storage for rapid development and testing  
+- Full CRUD endpoints: `POST`, `GET`, `PUT`, `DELETE`  
+- Swagger UI for testing & docs at `/` 
+- Minimal setup, ready for DevOps CI/CD pipelines  
+- Easily extendable to use persistent databases (e.g., MongoDB, PostgreSQL)
 
 ---
 
@@ -22,7 +22,7 @@ A lightweight Node.js Express-based REST API for managing users (Create, Read, U
 
 ### Requirements
 
-- Node.js 14+
+- Node.js 18+
 - npm or yarn
 
 ### Installation
@@ -71,7 +71,7 @@ Copy `.env.example` to `.env` and configure:
 
 ---
 
-## 🚀 Development Guide
+## Development Guide
 
 ### Local Development Setup
 
@@ -119,7 +119,7 @@ Copy `.env.example` to `.env` and configure:
 
 ---
 
-## 🌐 Production Deployment
+## Production Deployment
 
 ### Native Node.js Production Server
 
@@ -157,7 +157,7 @@ Copy `.env.example` to `.env` and configure:
 
 ---
 
-## 🔧 Configuration Options
+## Configuration Options
 
 ### Environment Variables
 
