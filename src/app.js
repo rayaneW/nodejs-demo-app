@@ -20,13 +20,6 @@ const swaggerOptions = {
       version: '1.0.0',
       description: 'A simple Express User Management API with CRUD operations',
     },
-    servers: [
-      {
-        url: process.env.NODE_ENV === 'production' 
-          ? 'https://your-production-url.com'
-          : `http://localhost:${process.env.PORT || 5000}`,
-      },
-    ],
   },
   apis: ['./src/routes/*.js'],
 };
