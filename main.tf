@@ -17,6 +17,10 @@ variable "ami_id" {
   default = "ami-04b70fa74e45c3917" # Ubuntu 24.04 LTS - Canonical (us-east-1)
 }
 
+data "aws_vpc" "default" {
+  default = true
+}
+
 resource "aws_key_pair" "deploy_key" {
   key_name   = var.key_name
   public_key = var.public_key
@@ -25,7 +29,7 @@ resource "aws_key_pair" "deploy_key" {
 resource "aws_security_group" "ssh_and_app" {
   name        = "${var.instance_name}-sg"
   description = "Allow SSH and app port 5000"
-  vpc_id      = aws_vpc.default.id
+  vpc_id      = data.aws_vpc.default.id
 
   ingress {
     from_port   = 22
