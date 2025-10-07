@@ -1,0 +1,20 @@
+name: Dependencies Example
+
+on:
+  workflow_dispatch:
+
+jobs:
+  checkout-example:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Verify repository contents
+        run: ls -alhR
